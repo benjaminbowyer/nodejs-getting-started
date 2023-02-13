@@ -1,0 +1,23 @@
+{
+  "name": "nodejs-getting-started",
+  "version": "0.0.1",
+  "description": "A simple getting started node.js app",
+  "license": "MIT",
+  "main": "src/index.js",
+  "engines": {
+    "node": "^18"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "test:unit": "tape src/**/*.spec.js | tap-difflet",
+    "watch": "nodemon --watch src --exec \"yarn test:unit\""
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "tap-difflet": "^0.7.2",
+    "tape": "^5.6.3"
+  }
+}
