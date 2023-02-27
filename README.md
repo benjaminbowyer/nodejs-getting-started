@@ -1,4 +1,4 @@
-# node.js getting started - an income tax calculator
+# node.js getting started - an income tax calculator (copy)
 
 This is a simple, but incomplete, tax calculator for the purpose of learning how to expand on a simple program.
 
