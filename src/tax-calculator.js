@@ -9,7 +9,7 @@ const calculate = function (income) {
 
   if (income < higherRateMaxIncome) {
       var taxBasic = (income - basicRateMaxIncome) * 0.2
-      console.log(`taxbasicinitial: ${taxBasic}`)
+      console.log(`Basic rate tax: £${taxBasic}`)
 
       var tax = taxBasic
       return (tax)
@@ -17,9 +17,9 @@ const calculate = function (income) {
 
   if (income < additionalRateMaxIncome) {
       var taxBasic = (37700) * 0.2
-      console.log(`taxbasicinitial: ${taxBasic}`)
+      console.log(`Basic rate tax: £${taxBasic}`)
       var taxHigher = (income - higherRateMaxIncome) * 0.4
-      console.log(`taxhigherinitial: ${taxHigher}`)
+      console.log(`Higher rate tax: £${taxHigher}`)
     
       tax = taxBasic + taxHigher
       return (tax)
@@ -27,15 +27,14 @@ const calculate = function (income) {
 
   if (income > additionalRateMaxIncome) {
       var taxBasic = (37700) * 0.2
-      console.log(`taxbasic: ${taxBasic}`)
+      console.log(`Basic rate tax: £${taxBasic}`)
       var taxHigher = (99730) * 0.4
-      console.log(`taxhigher: ${taxHigher}`)
+      console.log(`Higher rate tax: £${taxHigher}`)
       var taxAdditional = (income - additionalRateMaxIncome) * 0.45
-      console.log(`taxadditional: ${taxAdditional}`)
+      console.log(`Additional rate tax: £${taxAdditional}`)
 
       tax = taxBasic + taxHigher + taxAdditional
       return (tax)
       }
 } 
-
 module.exports.calculate = calculate;
