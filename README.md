@@ -22,7 +22,7 @@ Before you can run any other commands you need to install the dependencies for t
 
 To the tests:
 
-`yarn tests:unit`
+`yarn test:unit`
 
 Or you can leave the tests running as you work:
 
